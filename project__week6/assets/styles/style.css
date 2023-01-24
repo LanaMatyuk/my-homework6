@@ -102,19 +102,22 @@ body {
 }
 
 .header-images {
-    position: absolute;
-}
-
-.header-image {
-    position: absolute;
-    left: 838px;
-    top: 29px;
+    position: relative;
+    width: 410px;
+    height: 466px;
+    background: #E3EBE7;
 }
 
 .header-image2 {
-    position: relative;
-    left: 877px;
-    top: 169px;
+    position: absolute;
+    top: 140px;
+    left: 39px;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .section {
@@ -128,27 +131,25 @@ body {
 }
 
 .section-images {
-    position: absolute;
     grid-area: section-images;
+    position: relative;
+    width: 380px;
+    height: 287px;
+    background: #FAE9E0;
+}
+
+.section-image2 {
+    position: absolute;
+    left: 45px;
+    top: 80px;
+    max-width: 100%;
+
 }
 
 .section-text {
     grid-area: section-text;
     width: 645px;
 }
-
-.section-image1 {
-    position: absolute;
-
-}
-
-.section-image2 {
-    position: relative;
-    left: 45px;
-    top: 80px;
-
-}
-
 
 .text-title {
     margin-top: 0px;
@@ -185,7 +186,7 @@ body {
     min-height: 400px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "section-text_2" "section-images_2";
+    grid-template-areas: "section-text_2" "section-images2";
     column-gap: 20px;
     margin-bottom: 100px;
 }
@@ -209,18 +210,18 @@ body {
     margin-top: 24px;
 }
 
-.section-images_2 {
-    grid-area: section-images_2;
-    position: absolute;
-}
-
-.section2-image1 {
-    position: absolute;
+.section-images2 {
+    display: grid;
+    width: 410px;
+    height: 276px;
+    background: #E3EBE7;
 }
 
 .section2-image2 {
-    position: relative;
-    right: 5px;
+    position: absolute;
+    left: 910px;
+    top: 1239px;
+    max-width: 100%;
 }
 
 .footer {
@@ -245,6 +246,7 @@ body {
     line-height: 45px;
     letter-spacing: 0.02em;
     color: #373939;
+    margin-top: 0px;
 }
 
 .footer-address__item {
